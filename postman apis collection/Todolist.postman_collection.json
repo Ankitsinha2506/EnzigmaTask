@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "10260e13-9604-4cf8-ac5d-8fcdd892d1dc",
+		"name": "Todolist",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31487003",
+		"_collection_link": "https://gold-shuttle-103064.postman.co/workspace/EngizmaInternTask~5fbbeff6-34cd-419b-9575-0da9a8891e25/collection/31487003-10260e13-9604-4cf8-ac5d-8fcdd892d1dc?action=share&source=collection_link&creator=31487003"
+	},
+	"item": [
+		{
+			"name": "AddTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Sample Task3\",\r\n        \"description\": \"This is a sample task.\",\r\n        \"status\": \"Completed\",\r\n        \"createdAt\": \"2024-08-11\",\r\n        \"updatedAt\": \"2024-08-11\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4000/task/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"task",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FetchAllTask",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/retrive",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"retrive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Sample Task3\",\r\n        \"description\": \"This Task is Completed by Ankit.\",\r\n        \"status\": \"Completed\",\r\n        \"createdAt\": \"2024-08-11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/updateTask/66b850dacde8c3f51f5bf255",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"updateTask",
+						"66b850dacde8c3f51f5bf255"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTask",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/deleteTask/66b85767b6f53ccaade7e54a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"deleteTask",
+						"66b85767b6f53ccaade7e54a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/task/66b8577ab6f53ccaade7e54c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"task",
+						"66b8577ab6f53ccaade7e54c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
